@@ -4,28 +4,52 @@
   font-weight: bold;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link:hover,
 .link:active {
-  /* background: linear-gradient(90deg, #ff8a05, #f9b331); */
   background: linear-gradient(90deg, #ffffff, #66bb6a);
-
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  /* text-shadow: 0 0 18px rgba(102, 187, 106, 0.8); #66bb6a */
+  /* -webkit-text-fill-color: transparent; */
   transition: 0.3s;
-
-  text-shadow: 0 0 18px #66bb6a; /* #1b5e20 */
+  text-shadow: 0 0 18px #66bb6a;
 }
 
 .active {
-  /* background: linear-gradient(90deg, #ff8a05, #f9b331); */
   background: linear-gradient(90deg, #66bb6a, #66bb6a);
-  text-shadow: 0 0 18px #66bb6a; /* #1b5e20 */
-
+  text-shadow: 0 0 18px #66bb6a;
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* -webkit-text-fill-color: transparent; */
+}
+
+/* Mobile specific styles */
+@media (max-width: 767px) {
+  .link {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0;
+    border-radius: 0;
+    background: none;
+    -webkit-text-fill-color: initial;
+    text-shadow: none;
+  }
+
+  .link:hover,
+  .link:active {
+    background: none;
+    -webkit-text-fill-color: initial;
+    text-shadow: none;
+    color: #66bb6a;
+  }
+
+  .active {
+    background: none;
+    -webkit-text-fill-color: initial;
+    text-shadow: none;
+    color: #4caf50;
+  }
 }
