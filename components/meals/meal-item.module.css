@@ -1,0 +1,112 @@
+.meal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  border-radius: 30px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  color: #ddd6cb;
+  /* background: linear-gradient(90deg, #2c1e19, #25200f); */
+  /* background: linear-gradient(90deg, #1b5e20, #66bb6a); */
+  /* background: linear-gradient(90deg, #0d1f0d, #023805); */
+  background: linear-gradient(
+    135deg,
+    rgba(28, 32, 39, 0.9),
+    rgba(35, 43, 66, 0.9)
+  );
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(221, 214, 203, 0.1);
+}
+
+.headerText {
+  padding: 0.5rem 1rem 0 1rem;
+}
+
+.headerText h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  /* font-family: "Montserrat", sans-serif; */
+}
+
+.headerText p {
+  font-size: 0.75rem;
+  color: #66bb6a;
+  font-style: italic;
+}
+
+.meal h2,
+.meal p {
+  margin: 0;
+}
+
+.image {
+  position: relative;
+  height: 15rem;
+}
+
+.meal img {
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.summary {
+  padding: 1rem 1rem 0 1rem;
+}
+
+.actions {
+  padding: 1rem;
+  text-align: right;
+}
+
+.actions a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, #1b5e20, #66bb6a);
+  box-shadow: 0 0 15px rgba(102, 187, 106, 0.4);
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.actions a:hover,
+.actions a:active {
+  background: linear-gradient(90deg, #1b5e20, #66bb6a);
+  transition: 0.3s;
+  box-shadow: 0 0 25px rgba(102, 187, 106, 0.8);
+}
+
+@media (max-width: 768px) {
+  .image {
+    height: 12rem;
+  }
+  .headerText h2 {
+    font-size: 1.25rem;
+  }
+  .summary {
+    padding: 0.75rem 1rem 0 1rem;
+  }
+  .actions {
+    padding: 0.75rem 1rem 1rem 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .image {
+    height: 10rem;
+  }
+  .actions a {
+    width: 100%;
+    text-align: center;
+  }
+}

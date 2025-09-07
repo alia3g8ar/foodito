@@ -1,0 +1,69 @@
+.deleteButton {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+  font-family: "Vazir", "Tahoma", sans-serif;
+}
+
+.deleteButton:hover {
+  background: #c82333;
+}
+
+.confirmDialog {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.confirmDialog p {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.deleteBtn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-family: "Vazir", "Tahoma", sans-serif;
+}
+
+.deleteBtn:hover:not(:disabled) {
+  background: #c82333;
+}
+
+.deleteBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.cancelBtn {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-family: "Vazir", "Tahoma", sans-serif;
+}
+
+.cancelBtn:hover {
+  background: #5a6268;
+}
