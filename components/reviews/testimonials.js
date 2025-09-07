@@ -114,7 +114,9 @@ export default function Testimonials({ testimonials }) {
                   </span>
                 </div>
               </div>
-              <p className={classes.reviewText}>"{testimonial.review_text}"</p>
+              <p className={classes.reviewText}>
+                &quot;{testimonial.review_text}&quot;
+              </p>
             </motion.div>
           ))}
         </motion.div>
@@ -150,7 +152,7 @@ export default function Testimonials({ testimonials }) {
               </div>
             </div>
             <p className={classes.reviewText}>
-              "{testimonials[currentSlide].review_text}"
+              &quot;{testimonials[currentSlide].review_text}&quot;
             </p>
           </motion.div>
 

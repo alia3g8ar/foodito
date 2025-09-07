@@ -29,16 +29,16 @@ export default function DeleteMealButton({ slug, title }) {
   if (showConfirm) {
     return (
       <div className={classes.confirmDialog}>
-        <p>آیا مطمئن هستید که می‌خواهید "{title}" را حذف کنید؟</p>
+        <p>آیا مطمئن هستید که می‌خواهید &quot;{title}&quot; را حذف کنید؟</p>
         <div className={classes.buttons}>
-          <button 
-            onClick={handleDelete} 
+          <button
+            onClick={handleDelete}
             disabled={isDeleting}
             className={classes.deleteBtn}
           >
             {isDeleting ? "در حال حذف..." : "بله، حذف کن"}
           </button>
-          <button 
+          <button
             onClick={() => setShowConfirm(false)}
             className={classes.cancelBtn}
           >
@@ -50,7 +50,7 @@ export default function DeleteMealButton({ slug, title }) {
   }
 
   return (
-    <button 
+    <button
       onClick={() => setShowConfirm(true)}
       className={classes.deleteButton}
     >
